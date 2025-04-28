@@ -1,5 +1,13 @@
 # KCB Interview App
 
+### Tools Used
+- Java 17
+- Spring Boot v3.4.5
+- H2 Database
+- Jib
+- Lombok
+
+
 ### Runnning the Application
 
 To run the application, follow the following steps:
@@ -24,10 +32,10 @@ Below are the API endpoints available:
 - POST localhost:8080/api/v1/b2c/initiate-transaction
 ```
 {
-    "phoneNumber": "254700112233",
-    "amount": 100,
-    "narration": "Test transaction",
-    "momoProvider": "MPESA"
+    "phoneNumber": "254700112233", // phone number of the client to receive funds
+    "amount": 100, // amount to be transacted
+    "narration": "Test transaction", // narration of the transaction
+    "momoProvider": "MPESA" // MobileMoney provider to use eg MPESA|AIRTEL
 }
 ```
 
