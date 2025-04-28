@@ -21,7 +21,14 @@ To run the application, follow the following steps:
 ```
 docker run -d --name elimbaru/kcb-interview-app -p 8080:8080 elimbaru/kcb-interview-app
 ```
+
+- You can also execute the command below, to run the application outside a docker container: 
+```
+./gradlew bootRun
+```
+
 The application is now available at port 8080.
+
 
 
 ### REST API Endpoints
